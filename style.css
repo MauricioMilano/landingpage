@@ -1,0 +1,360 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Using a more modern font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8; /* Light gray background */
+}
+
+header {
+    background: #2c3e50; /* Darker header background */
+    color: #ecf0f1; /* Light text color */
+    padding: 2rem 0; /* More padding */
+    text-align: center;
+    border-bottom: none; /* Remove border */
+}
+
+header h1 {
+    margin: 0;
+    color: #ecf0f1;
+    font-size: 2.5em; /* Larger heading */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+section {
+    padding: 40px 20px; /* More padding */
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50; /* Darker heading color */
+    margin-bottom: 40px; /* More space below heading */
+    font-size: 2.2em; /* Slightly larger heading */
+}
+
+#services {
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Add space between items */
+}
+
+#services .service-item {
+    flex: 1 1 300px; /* Allow items to grow and shrink, with a base width */
+    margin-bottom: 20px; /* Adjust margin since gap is used */
+    background-color: #fff; /* White background for service items */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    display: flex; /* Use flexbox for item content */
+    flex-direction: column;
+    align-items: center;
+}
+
+#services img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Space below image */
+}
+
+#services h3 {
+    color: #3498db; /* Blue color for service titles */
+    margin-top: 0;
+}
+
+#benefits ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#benefits li {
+    background: #ecf0f1; /* Light background for list items */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #3498db; /* Blue border */
+    border-radius: 4px;
+}
+
+#testimonials {
+    background-color: #ecf0f1; /* Light background for testimonials section */
+    padding: 40px 20px;
+}
+
+#testimonials .carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden; /* Hide overflowing items */
+}
+
+#testimonials .carousel-items {
+    display: flex; /* Arrange items in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for carousel */
+}
+
+#testimonials .testimonial-item {
+    flex: 0 0 100%; /* Each item takes full width of container */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for carousel */
+}
+
+#testimonials .testimonial-item p:last-child {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+#testimonials .prev-btn,
+#testimonials .next-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#testimonials .prev-btn:hover,
+#testimonials .next-btn:hover {
+    background-color: #2980b9;
+}
+
+#testimonials .testimonial-item p:last-child {
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+
+.call-to-action {
+    margin: 30px 0; /* More margin */
+}
+
+.sms-button {
+    display: inline-block;
+    background: #2ecc71; /* Green button */
+    color: #fff;
+    padding: 12px 25px; /* More padding */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3em; /* Larger font */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.sms-button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+form {
+    max-width: 600px; /* Wider form */
+    margin: 30px auto; /* More margin */
+    text-align: left;
+    padding: 30px; /* More padding */
+    border: 1px solid #bdc3c7; /* Lighter border */
+    border-radius: 8px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px; /* More space below label */
+    font-weight: bold;
+    color: #555;
+}
+
+form input,
+form textarea {
+    width: calc(100% - 22px); /* Adjust width for padding and border */
+    padding: 11px; /* More padding */
+    margin-bottom: 15px; /* More space below input */
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 12px; /* More padding */
+    background: #3498db; /* Blue button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0; /* More padding */
+    background: #333;
+    color: #fff;
+    margin-top: 40px; /* More space above footer */
+    font-size: 0.9em;
+}
+
+/* Basic responsiveness */
+#contact {
+    background-color: #fff; /* White background for contact section */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    color: #ecf0f1; /* Light text color */
+    background-color: #1a202c; /* Dark background */
+}
+
+body.dark-mode header {
+    background: #2d3748; /* Slightly lighter dark background for header */
+    color: #ecf0f1;
+}
+
+body.dark-mode h2 {
+    color: #fb923c; /* Orange-300 for headings */
+}
+
+body.dark-mode #services .service-item {
+    background-color: #2d3748; /* Dark background for service items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #services h3 {
+    color: #fb923c; /* Orange-300 for service titles */
+}
+
+body.dark-mode #benefits li {
+    background: #2d3748; /* Dark background for list items */
+    border-left-color: #fb923c; /* Orange-300 border */
+}
+
+body.dark-mode #testimonials {
+    background-color: #2d3748; /* Dark background for testimonials section */
+}
+
+body.dark-mode #testimonials .testimonial-item {
+    background: #1a202c; /* Darker background for testimonial items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode #testimonials .testimonial-item p:last-child {
+    color: #cbd5e0; /* Lighter text for testimonial author */
+}
+
+body.dark-mode .sms-button {
+    background: #fb923c; /* Orange-300 button */
+}
+
+body.dark-mode .sms-button:hover {
+    background-color: #f6ad55; /* Slightly lighter orange on hover */
+}
+
+body.dark-mode form {
+    background-color: #2d3748; /* Dark background for form */
+    border-color: #4a5568; /* Darker border */
+}
+
+body.dark-mode form label {
+    color: #cbd5e0; /* Lighter text for form labels */
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background-color: #1a202c; /* Dark background for form inputs */
+    border-color: #4a5568; /* Darker border */
+    color: #ecf0f1; /* Light text color */
+}
+
+body.dark-mode form button {
+    background: #fb923c; /* Orange-300 button */
+}
+
+body.dark-mode form button:hover {
+    background-color: #f6ad55; /* Slightly lighter orange on hover */
+}
+
+body.dark-mode #contact {
+    background-color: #1a202c; /* Dark background for contact section */
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #services {
+        flex-direction: column; /* Stack service items on small screens */
+        gap: 0;
+    }
+
+    #services .service-item {
+        margin-bottom: 20px;
+    }
+
+    #benefits ul {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+    #services {
+        flex-direction: column; /* Stack service items on small screens */
+        gap: 0;
+    }
+
+    #services .service-item {
+        margin-bottom: 20px;
+    }
+
+    #benefits ul {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
